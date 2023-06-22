@@ -1,0 +1,14 @@
+* {
+    background-color: rgb(17, 29, 6);
+    color: rgb(212, 255, 212);
+}
+.sm-icon {
+    position: absolute;
+    top: .25vh;
+    right: 1vh;
+    background-color: transparent;
+    width: 5vw;
+}
+p, a, h1, h2, h3, h4{
+    background-color: transparent;
+}

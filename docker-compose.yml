@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  flask-backend:
+    build:
+      context: /gitbot
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    networks:
+      - my-network
+    depends_on:
+      - mongodb
+
+  mongodb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 27017:27017
+    networks:
+      - my-network
+
+  react-frontend:
+    build:
+      context: /gitend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - my-network
+    depends_on:
+      - flask-backend
+
+networks:
+  my-network:
