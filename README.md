@@ -63,6 +63,7 @@ This command will start the Flask backend, React frontend, and MongoDB database 
     -  `cd mygitbotvenv`
 
     -  Ubuntu: `source mygitbotvenv/bin/activate`
+       
        Windows: `cd mygitbotvenv && /Scripts/activate.bat`
 
     -  `pip install -r requirements.txt`
