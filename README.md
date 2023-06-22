@@ -2,6 +2,7 @@
 
 ![SVG Image](gitEnd/public/icon.svg)
 
+# Hello I am GitBot !
 
 This is a Docker application that consists of a Flask backend, a React frontend, and a MongoDB database. The application allows users to provide a GitHub repository URL, which is then vectorized using LangChain and DeepLake. This vectorized information is used to prompt the engineering of a chat-bot capable of retrieving and referencing files from the uploaded GitHub repository.
 
