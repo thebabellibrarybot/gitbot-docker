@@ -50,6 +50,34 @@ This command will start the Flask backend, React frontend, and MongoDB database 
 
 4. Once the containers are up and running, you can access the application in your web browser at `http://localhost:3000`.
 
+## Alternative build
+
+1. Spin up a mongoDB server with public uri
+
+2. cd from root into `/gitBot`
+
+    Run in terminal:
+
+    -  `python -m venv mygitbotvenv`
+
+    -  `cd mygitbotvenv`
+
+    -  Ubuntu: `source mygitbotvenv/bin/activate`
+       Windows: `cd mygitbotvenv && /Scripts/activate.bat`
+
+    -  `pip install -r requirements.txt`
+
+    -  `python app.py`
+
+3. cd from root into `/gitEnd`
+
+    Run in terminal:
+
+    -  `npm install`
+
+    -  `npm start`
+    
+
 ## Usage
 
 1. Open your web browser and navigate to `http://localhost:3000`.
